@@ -1,0 +1,29 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-key": "\u002BFAdHrV09HTvfJKlwdBMyvcl4JFZYmIr580QtEbZ9Gg=",
+        "Content-Length": "591",
+        "Content-Type": "application/json",
+        "Date": "Wed, 08 Feb 2023 03:40:31 GMT",
+        "User-Agent": "azsdk-java-UnknownName/UnknownVersion (11.0.17; Windows 11; 10.0)",
+        "x-ms-client-request-id": "1f62ec9d-73b2-4ce3-8dfc-0476dd8f6b2f"
+      },
+      "RequestBody": "[{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u002231110abf-2867-47ed-bf91-189116141bc4\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022831d1f00-2297-4f93-9599-75f801393906\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022e850ec17-4b03-4d67-9e39-6fc11f198793\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u00229a4ec04d-b943-4a1e-8b61-a066d0cd41a7\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u00220dfbdcd1-3103-450b-953f-77d678733388\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:30 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "99a0b8a5-7a1d-4855-9406-ac6f4d2858fd"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

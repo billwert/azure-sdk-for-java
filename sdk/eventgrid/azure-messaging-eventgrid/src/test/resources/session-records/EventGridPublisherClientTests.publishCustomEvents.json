@@ -1,0 +1,29 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-key": "\u002BFAdHrV09HTvfJKlwdBMyvcl4JFZYmIr580QtEbZ9Gg=",
+        "Content-Length": "816",
+        "Content-Type": "application/json",
+        "Date": "Wed, 08 Feb 2023 03:40:31 GMT",
+        "User-Agent": "azsdk-java-UnknownName/UnknownVersion (11.0.17; Windows 11; 10.0)",
+        "x-ms-client-request-id": "40cdc7f7-3217-4bcc-9162-7eee213b6b3a"
+      },
+      "RequestBody": "[{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022c40292e4-c6b9-4aa1-ba60-264d7a0867b5\u0022,\u0022time\u0022:\u00222023-02-07T19:40:31.566252500-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022a0bfacb4-32ce-4180-8e1d-56c77767c4c8\u0022,\u0022time\u0022:\u00222023-02-07T19:40:31.566252500-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u00227b26b24e-54f8-43cf-b527-8de563448c2b\u0022,\u0022time\u0022:\u00222023-02-07T19:40:31.566252500-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022caf66171-9850-4025-914e-0171e8a217c7\u0022,\u0022time\u0022:\u00222023-02-07T19:40:31.566252500-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u002279e2d10e-73d9-48d3-9597-e6b2aa2e2b65\u0022,\u0022time\u0022:\u00222023-02-07T19:40:31.566252500-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:30 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "f576681e-73ce-4aa1-ac1c-499fe3330cc4"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

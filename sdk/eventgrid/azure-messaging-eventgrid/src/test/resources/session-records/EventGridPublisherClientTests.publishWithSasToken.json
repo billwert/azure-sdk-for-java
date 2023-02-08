@@ -1,0 +1,29 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-token": "r=https%3A%2F%2Ftd13304a7f61b84e2topic.westus-1.eventgrid.azure.net%2Fapi%2Fevents%3Fapi-version%3D2018-01-01\u0026e=2%2F8%2F2023\u002B4%3A0%3A31\u002BAM\u0026s=e5nFZVQYx9pV43fFHKJ8HhHMUKF5L2jkcj2qpKOZd64%3D",
+        "Content-Length": "240",
+        "Content-Type": "application/json",
+        "Date": "Wed, 08 Feb 2023 03:40:31 GMT",
+        "User-Agent": "azsdk-java-UnknownName/UnknownVersion (11.0.17; Windows 11; 10.0)",
+        "x-ms-client-request-id": "03293afb-430e-4a79-bdce-6fe3e1c02c1b"
+      },
+      "RequestBody": "[{\u0022id\u0022:\u0022370b2fb2-5080-473a-97fc-db4f5eb3b2ee\u0022,\u0022subject\u0022:\u0022Test\u0022,\u0022data\u0022:{\u0022Field2\u0022:\u0022Value2\u0022,\u0022Field3\u0022:\u0022Value3\u0022,\u0022Field1\u0022:\u0022Value1\u0022},\u0022eventType\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022,\u0022eventTime\u0022:\u00222023-02-08T03:40:31.706857400Z\u0022,\u0022dataVersion\u0022:\u00221.0\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:31 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "2c16b197-66ab-4da1-932d-4fb5fa5acd16"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

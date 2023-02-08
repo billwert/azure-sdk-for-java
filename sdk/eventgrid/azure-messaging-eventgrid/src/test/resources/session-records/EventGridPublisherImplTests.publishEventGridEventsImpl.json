@@ -1,0 +1,27 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-key": "vHEgNS6vwnAaPqpWPoqL0Uni8Oe96OEIfF4UwASGxAk=",
+        "Content-Length": "240",
+        "Content-Type": "application/json",
+        "User-Agent": "ReactorNetty/dev"
+      },
+      "RequestBody": "[{\u0022id\u0022:\u00222bc20f31-9a8e-4430-b51c-44a5fd39607b\u0022,\u0022subject\u0022:\u0022Test\u0022,\u0022data\u0022:{\u0022Field2\u0022:\u0022Value2\u0022,\u0022Field3\u0022:\u0022Value3\u0022,\u0022Field1\u0022:\u0022Value1\u0022},\u0022eventType\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022,\u0022eventTime\u0022:\u00222023-02-08T03:40:33.960419900Z\u0022,\u0022dataVersion\u0022:\u00221.0\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:33 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "7d09840c-d24f-4d79-b140-de16df989727"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

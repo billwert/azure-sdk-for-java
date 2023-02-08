@@ -1,0 +1,29 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-key": "\u002BFAdHrV09HTvfJKlwdBMyvcl4JFZYmIr580QtEbZ9Gg=",
+        "Content-Length": "119",
+        "Content-Type": "application/json",
+        "Date": "Wed, 08 Feb 2023 03:40:30 GMT",
+        "User-Agent": "azsdk-java-UnknownName/UnknownVersion (11.0.17; Windows 11; 10.0)",
+        "x-ms-client-request-id": "eb33b2e8-7270-4018-a3ac-5f8fa7b39864"
+      },
+      "RequestBody": "[{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022fa93435d-6492-490c-8aca-12af106667b7\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:29 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "3fc735a9-e485-472b-ab22-fe49a47a7c77"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

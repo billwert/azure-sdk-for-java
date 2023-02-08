@@ -9,6 +9,7 @@ import com.azure.core.http.policy.AddHeadersPolicy;
 import com.azure.core.http.policy.RetryPolicy;
 import com.azure.core.models.CloudEventDataFormat;
 import com.azure.core.test.TestBase;
+import com.azure.core.test.TestProxyTestBase;
 import com.azure.core.util.BinaryData;
 import com.azure.messaging.eventgrid.implementation.EventGridPublisherClientImpl;
 import com.azure.messaging.eventgrid.implementation.EventGridPublisherClientImplBuilder;
@@ -25,7 +26,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
-public class EventGridPublisherImplTests extends TestBase {
+public class EventGridPublisherImplTests extends TestProxyTestBase {
 
     private HttpPipelineBuilder pipelineBuilder;
 
@@ -49,7 +50,7 @@ public class EventGridPublisherImplTests extends TestBase {
     // Event Grid access key for a topic accepting custom schema events
     private static final String CUSTOM_KEY = "AZURE_EVENTGRID_CUSTOM_KEY";
 
-    private static final String DUMMY_ENDPOINT = "https://www.dummyEndpoint.com/api/events";
+    private static final String DUMMY_ENDPOINT = "https://REDACTED.westus-1.eventgrid.azure.net/api/events";
 
     private static final String DUMMY_KEY = "dummyKey";
 

@@ -1,0 +1,27 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://REDACTED.westus-1.eventgrid.azure.net/api/events?api-version=2018-01-01",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Accept": "*/*",
+        "aeg-sas-key": "\u002BFAdHrV09HTvfJKlwdBMyvcl4JFZYmIr580QtEbZ9Gg=",
+        "Content-Length": "816",
+        "Content-Type": "application/json",
+        "User-Agent": "ReactorNetty/dev"
+      },
+      "RequestBody": "[{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022643efea0-c4b7-4d91-afe8-02d83c18c86e\u0022,\u0022time\u0022:\u00222023-02-07T19:40:33.324806200-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022b09541b6-8d26-4709-ac8a-110349070677\u0022,\u0022time\u0022:\u00222023-02-07T19:40:33.324806200-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u00229c3ea23d-11f5-4d3a-8726-50c2416e62a2\u0022,\u0022time\u0022:\u00222023-02-07T19:40:33.324806200-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022b23f147c-781d-4bd6-b112-82b317491d0b\u0022,\u0022time\u0022:\u00222023-02-07T19:40:33.324806200-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022},{\u0022subject\u0022:\u0022Test\u0022,\u0022foo\u0022:\u0022bar\u0022,\u0022id\u0022:\u0022baed4965-fcf4-4b50-bf71-e5b434ca4393\u0022,\u0022time\u0022:\u00222023-02-07T19:40:33.324806200-08:00\u0022,\u0022type\u0022:\u0022Microsoft.MockPublisher.TestEvent\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "api-supported-versions": "2018-01-01",
+        "Content-Length": "0",
+        "Date": "Wed, 08 Feb 2023 03:40:32 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "x-ms-request-id": "900483b9-ab0e-47fe-8502-f968f4f053ae"
+      },
+      "ResponseBody": null
+    }
+  ],
+  "Variables": {}
+}

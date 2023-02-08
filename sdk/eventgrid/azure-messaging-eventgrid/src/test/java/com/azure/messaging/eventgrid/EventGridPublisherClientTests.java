@@ -13,6 +13,7 @@ import com.azure.core.http.rest.Response;
 import com.azure.core.models.CloudEventDataFormat;
 import com.azure.core.serializer.json.jackson.JacksonJsonSerializerBuilder;
 import com.azure.core.test.TestBase;
+import com.azure.core.test.TestProxyTestBase;
 import com.azure.core.util.BinaryData;
 import com.azure.core.util.Context;
 import com.azure.core.models.CloudEvent;
@@ -42,7 +43,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
-public class EventGridPublisherClientTests extends TestBase {
+public class EventGridPublisherClientTests extends TestProxyTestBase {
 
     private EventGridPublisherClientBuilder builder;
 
@@ -69,11 +70,10 @@ public class EventGridPublisherClientTests extends TestBase {
     private static final String EVENTGRID_PARTNER_NAMESPACE_TOPIC_KEY = "EVENTGRID_PARTNER_NAMESPACE_TOPIC_KEY";
     private static final String EVENTGRID_PARTNER_CHANNEL_NAME = "EVENTGRID_PARTNER_CHANNEL_NAME";
 
-    private static final String DUMMY_ENDPOINT = "https://www.dummyEndpoint.com/api/events";
+    private static final String DUMMY_ENDPOINT = "https://REDACTED.westus-1.eventgrid.azure.net/api/events";
 
     private static final String DUMMY_KEY = "dummyKey";
 
-    private static final String DUMMY_CHANNEL_NAME = "dummy-channel";
 
     @Override
     protected void beforeTest() {
@@ -88,6 +88,8 @@ public class EventGridPublisherClientTests extends TestBase {
             builder.addPolicy(interceptorManager.getRecordPolicy())
                 .retryPolicy(new RetryPolicy());
         }
+
+
     }
 
     @Override
@@ -578,9 +580,7 @@ public class EventGridPublisherClientTests extends TestBase {
     }
 
     private String getChannelName(String liveEnvName) {
-        if (interceptorManager.isPlaybackMode()) {
-            return DUMMY_CHANNEL_NAME;
-        }
+
         String channelName = System.getenv(liveEnvName);
         assertNotNull(channelName, "System environment variable " + liveEnvName + " is null");
         return channelName;
