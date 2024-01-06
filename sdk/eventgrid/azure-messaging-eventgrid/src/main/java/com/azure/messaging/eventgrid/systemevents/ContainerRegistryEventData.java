@@ -5,13 +5,29 @@ package com.azure.messaging.eventgrid.systemevents;
 
 import com.azure.core.annotation.Fluent;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.time.OffsetDateTime;
 
 /**
  * The content of the event request message.
  */
+@JsonTypeInfo(
+    use = JsonTypeInfo.Id.NAME,
+    include = JsonTypeInfo.As.PROPERTY,
+    property = "eventType",
+    defaultImpl = ContainerRegistryEventData.class)
+@JsonTypeName("ContainerRegistryEventData")
+@JsonSubTypes({
+    @JsonSubTypes.Type(
+        name = "Microsoft.ContainerRegistry.ImagePushed",
+        value = ContainerRegistryImagePushedEventData.class),
+    @JsonSubTypes.Type(
+        name = "Microsoft.ContainerRegistry.ImageDeleted",
+        value = ContainerRegistryImageDeletedEventData.class) })
 @Fluent
-public final class ContainerRegistryEventData {
+public class ContainerRegistryEventData {
 
     /*
      * The event ID.

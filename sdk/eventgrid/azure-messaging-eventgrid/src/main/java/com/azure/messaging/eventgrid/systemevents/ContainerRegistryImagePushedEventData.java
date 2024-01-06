@@ -4,11 +4,15 @@
 package com.azure.messaging.eventgrid.systemevents;
 
 import com.azure.core.annotation.Fluent;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import java.time.OffsetDateTime;
 
 /**
  * Schema of the Data property of an EventGridEvent for a Microsoft.ContainerRegistry.ImagePushed event.
  */
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "eventType")
+@JsonTypeName("Microsoft.ContainerRegistry.ImagePushed")
 @Fluent
 public final class ContainerRegistryImagePushedEventData extends ContainerRegistryEventData {
 
