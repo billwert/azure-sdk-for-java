@@ -23,8 +23,14 @@
 
   <dependencies>
     <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.7</version>
+    </dependency>
+    <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-identity</artifactId>
+<!--      <version>1.14.2</version> &lt;!&ndash; {x-version-update;com.azure:azure-identity;current} &ndash;&gt;-->
       <version>1.15.0-beta.1</version> <!-- {x-version-update;com.azure:azure-identity;current} -->
     </dependency>
     <dependency>
@@ -45,4 +51,23 @@
       <version>1.15.7</version> <!-- {x-version-update;com.azure:azure-core-http-netty;dependency} -->
     </dependency>
   </dependencies>
+  <build>
+  <plugins>
+  <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-enforcer-plugin</artifactId>
+    <version>3.5.0</version> <!-- {x-version-update;org.apache.maven.plugins:maven-enforcer-plugin;external_dependency} -->
+    <configuration>
+      <rules>
+        <bannedDependencies>
+          <includes>
+            <include>ch.qos.logback:logback-classic:[1.5.7]</include>
+          </includes>
+        </bannedDependencies>
+      </rules>
+    </configuration>
+  </plugin>
+  </plugins>
+  </build>
+
 </project>

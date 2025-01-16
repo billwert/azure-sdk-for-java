@@ -3,7 +3,16 @@
 
 package com.azure.identity.perf;
 
+import com.azure.identity.perf.core.ServiceTest;
 import com.azure.perf.test.core.PerfStressProgram;
+
+import java.io.File;
+import java.io.IOException;
+import java.lang.reflect.Modifier;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.List;
 
 /**
  * Runs the Identity performance tests.
@@ -21,17 +30,12 @@ import com.azure.perf.test.core.PerfStressProgram;
  * Then run the App's main method via IDE.</p>
  */
 public class App {
-    public static void main(String[] args) {
-        Class<?>[] testClasses;
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        try {
-            testClasses = new Class<?>[] {
-                Class.forName("com.azure.identity.perf.ReadCache"),
-                Class.forName("com.azure.identity.perf.WriteCache"), };
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-
-        PerfStressProgram.run(testClasses, args);
+        PerfStressProgram.run(new Class<?>[] {
+            ManagedIdentityGetTokenTest.class,
+            ManagedIdentityConstructAndGetToken.class,
+            ManagedIdentityGetTokenCustomForkJoinTest.class }, args);
     }
+
 }
